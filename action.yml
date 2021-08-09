@@ -37,7 +37,7 @@ runs:
     ODUA_CONSUMER_KEY: ${{ inputs.consumer-key }}
     ODUA_API_ENDPOINT: ${{ inputs.api-endpoint }}
     ODUA_DNS_ZONE: ${{ inputs.dns-zone }}
-    ODUA_RECORD_ID: ${{ inputs.recod-id }}
+    ODUA_RECORD_ID: ${{ inputs.record-id }}
     ODUA_SUBDOMAIN: ${{ inputs.subdomain }}
     ODUA_TARGET: ${{ inputs.target }}
     ODUA_TTL: ${{ inputs.ttl }}
