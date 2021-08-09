@@ -41,3 +41,6 @@ runs:
     ODUA_SUBDOMAIN: ${{ inputs.subdomain }}
     ODUA_TARGET: ${{ inputs.target }}
     ODUA_TTL: ${{ inputs.ttl }}
+branding:
+  icon: 'server'  
+  color: 'purple'
