@@ -43,7 +43,7 @@ DNS record TTL.
 ## Example usage
 
 ```yaml
-uses: CrispyBaguette/ovh-dns-alter-action@v1.0
+uses: CrispyBaguette/ovh-dns-alter-action@v1.1
 with:
   application-key: foo
   application-secret: bar
