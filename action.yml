@@ -1,46 +1,46 @@
-name: 'OVH alter DNS record'
-description: 'Alter a DNS record using the OVH API'
+name: "OVH alter DNS record"
+description: "Alter a DNS record using the OVH API"
 inputs:
   application-key:
-    description: 'Application key'
+    description: "Application key"
     required: true
   application-secret:
-    description: 'Application secret'
+    description: "Application secret"
     required: true
   consumer-key:
-    description: 'Consumer key'
+    description: "Consumer key"
     required: true
   api-endpoint:
-    description: 'API endpoint'
+    description: "API endpoint"
     required: false
   dns-zone:
-    description: 'DNS zone'
+    description: "DNS zone"
     required: true
   record-id:
-    description: 'DNS record ID'
+    description: "DNS record ID"
     required: true
   subdomain:
-    description: 'DNS record subdomain'
+    description: "DNS record subdomain"
     required: false
   target:
-    description: 'DNS record target'
+    description: "DNS record target"
     required: false
   ttl:
-    description: 'DNS record TTL'
+    description: "DNS record TTL"
     required: false
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   env:
-    ODUA_APPLICATION_KEY: ${{ inputs.application-key }}
-    ODUA_APPLICATION_SECRET: ${{ inputs.application-secret }}
-    ODUA_CONSUMER_KEY: ${{ inputs.consumer-key }}
-    ODUA_API_ENDPOINT: ${{ inputs.api-endpoint }}
-    ODUA_DNS_ZONE: ${{ inputs.dns-zone }}
-    ODUA_RECORD_ID: ${{ inputs.record-id }}
-    ODUA_SUBDOMAIN: ${{ inputs.subdomain }}
-    ODUA_TARGET: ${{ inputs.target }}
-    ODUA_TTL: ${{ inputs.ttl }}
+    APPLICATION_KEY: ${{ inputs.application-key }}
+    APPLICATION_SECRET: ${{ inputs.application-secret }}
+    CONSUMER_KEY: ${{ inputs.consumer-key }}
+    API_ENDPOINT: ${{ inputs.api-endpoint }}
+    DNS_ZONE: ${{ inputs.dns-zone }}
+    RECORD_ID: ${{ inputs.record-id }}
+    SUBDOMAIN: ${{ inputs.subdomain }}
+    TARGET: ${{ inputs.target }}
+    TTL: ${{ inputs.ttl }}
 branding:
-  icon: 'server'  
-  color: 'purple'
+  icon: "server"
+  color: "purple"
