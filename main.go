@@ -10,7 +10,6 @@ import (
 func main() {
 	// Setup configuration with viper
 	viper.SetDefault("API_ENDPOINT", "ovh-eu")
-	viper.SetEnvPrefix("ODUA")
 	viper.BindEnv("API_ENDPOINT")
 	viper.BindEnv("APPLICATION_KEY")
 	viper.BindEnv("APPLICATION_SECRET")
