@@ -1,9 +1,12 @@
 FROM golang:1.16 as build-env
 
-WORKDIR /go/src/app
-ADD . /go/src/app
+WORKDIR /app
 
-RUN go get -d -v ./...
+COPY go.mod ./
+COPY go.sum ./
+RUN go mod download
+
+COPY . /app
 
 RUN go build -o /go/bin/app
 
